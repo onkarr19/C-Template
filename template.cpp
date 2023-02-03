@@ -40,13 +40,31 @@ typedef vector<string> vs;
 
 #define TC(t) while(t--)
 
+ll gcd(ll a, ll b) {
+    if(b==0) return a;
+    return gcd(b,a%b);
+}
+ll lcm(ll a,ll b) {
+    return (a*b)/gcd(a,b);
+}
+void rvec(vl &arr, ll n) {
+    for(int i=0;i<n;i++) cin>>arr[i];
+}
+void pvec(vl &arr, ll n) {
+    for(int i=0;i<n;i++) cout<<arr[i]<<" ";
+    cout<<endl;
+}
+
+
+void solve() {
+    int n; cin >> n;
+
+}
 
 int main() {
 
-    cout << "Working...";
-
-
-
+    int t; cin>>t;
+    while (t--) solve();
 
     return 0;
 }
